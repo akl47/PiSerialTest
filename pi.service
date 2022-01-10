@@ -1,0 +1,11 @@
+[Unit]
+Description=Pump Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/neuralink/
+ExecStart=/usr/bin/env ./clientStart.sh
+
+[Install]
+WantedBy=multi-user.target
